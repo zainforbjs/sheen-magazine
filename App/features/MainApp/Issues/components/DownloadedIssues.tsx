@@ -113,7 +113,8 @@ export default function DownloadedIssues({ navigation, user }) {
                       // console.log('latest?.url==>', latest?.url);
                       navigation.navigate('ViewIssue', {
                         url: latest?.url,
-                        title: latest?.title
+                        title: latest?.title,
+                        description: latest?.description
                       });
                     }}
                     color={accessToIssue ? black : red}

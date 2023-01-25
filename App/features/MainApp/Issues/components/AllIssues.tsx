@@ -71,7 +71,7 @@ export default function AllIssues({ navigation, user }) {
   });
 
   const accessToIssue: boolean = Boolean(
-    latest?.paid || user?.isAdmin || temp || false
+    latest?.paid || user?.isAdmin || temp || true
   );
 
   // const accessToIssue: boolean = Boolean(
@@ -220,7 +220,8 @@ export default function AllIssues({ navigation, user }) {
                                     if (!isDownloaded)
                                       navigation.navigate('ViewIssue', {
                                         url,
-                                        title: latest?.title
+                                        title: latest?.title,
+                                        description: latest?.description
                                       });
                                   }
                                 );
@@ -231,7 +232,8 @@ export default function AllIssues({ navigation, user }) {
                               onPress: () =>
                                 navigation.navigate('ViewIssue', {
                                   url: latest?.url,
-                                  title: latest?.title
+                                  title: latest?.title,
+                                  description: latest?.description
                                 })
                             }
                           ]

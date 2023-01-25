@@ -36,7 +36,7 @@ export default class ViewIssue extends React.Component<Props, State> {
     const {
       navigation,
       route: {
-        params: { url, title = 'title' }
+        params: { url, title = 'title', description="" }
       }
     } = this.props;
     const { isVisible, page, numberOfPages } = this.state;
@@ -65,7 +65,9 @@ export default class ViewIssue extends React.Component<Props, State> {
                 this.setState({ page, numberOfPages })
               }
             />
+             
           </View>
+          
 
           <View style={[h(sizeButtonIconStandard), t.mT10]}>
             <ButtonIconFeather
@@ -78,6 +80,19 @@ export default class ViewIssue extends React.Component<Props, State> {
               style={[t.pR5, t.selfEnd]}
             />
           </View>
+
+          <Text
+                  style={[
+                    t.text2xl,
+                    t.mT4,
+                    t.mL2,
+                    t.mB1,
+                    t.fontSemibold,
+                    { color: 'rgb(0,0,0)' }
+                  ]}
+                >
+                  {description} test
+                </Text>
 
           <View
             style={[
