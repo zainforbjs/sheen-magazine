@@ -71,7 +71,7 @@ export default function AllIssues({ navigation, user }) {
   });
 
   const accessToIssue: boolean = Boolean(
-    latest?.paid || user?.isAdmin || temp || true
+    latest?.paid || user?.isAdmin || temp || false
   );
 
   // const accessToIssue: boolean = Boolean(
