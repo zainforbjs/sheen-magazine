@@ -1,0 +1,57 @@
+{
+    "message": "Successful fetch for shop information.",
+    "shop": {
+        "paymentSettings": {
+            "enabledPresentmentCurrencies": [
+                {
+                    "key": "USD",
+                    "type": {
+                        "name": "CurrencyCode",
+                        "kind": "ENUM"
+                    }
+                }
+            ],
+            "type": {
+                "name": "PaymentSettings",
+                "kind": "OBJECT",
+                "fieldBaseTypes": {
+                    "enabledPresentmentCurrencies": "CurrencyCode"
+                },
+                "implementsNode": false
+            }
+        },
+        "description": "",
+        "moneyFormat": "${{amount}}",
+        "name": "sheenmagazine",
+        "primaryDomain": {
+            "host": "sheenmagazine.myshopify.com",
+            "sslEnabled": true,
+            "url": "https://sheenmagazine.myshopify.com",
+            "type": {
+                "name": "Domain",
+                "kind": "OBJECT",
+                "fieldBaseTypes": {
+                    "host": "String",
+                    "sslEnabled": "Boolean",
+                    "url": "URL"
+                },
+                "implementsNode": false
+            }
+        },
+        "type": {
+            "name": "Shop",
+            "kind": "OBJECT",
+            "fieldBaseTypes": {
+                "description": "String",
+                "moneyFormat": "String",
+                "name": "String",
+                "paymentSettings": "PaymentSettings",
+                "primaryDomain": "Domain",
+                "privacyPolicy": "ShopPolicy",
+                "refundPolicy": "ShopPolicy",
+                "termsOfService": "ShopPolicy"
+            },
+            "implementsNode": false
+        }
+    }
+}

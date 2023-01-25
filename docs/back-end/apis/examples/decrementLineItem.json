@@ -1,0 +1,288 @@
+{
+    "message": "Line item decremented successfully for product: Z2lkOi8vc2hvcGlmeS9DaGVja291dExpbmVJdGVtLzQxMjgzNTE0ODU5NzEwMD9jaGVja291dD01MTkwNjljODMxNjBhOWY4N2RlOTE0NWRhYjYyYmRhOA==",
+    "decrementLineItemResult": {
+        "id": "Z2lkOi8vc2hvcGlmeS9DaGVja291dC81MTkwNjljODMxNjBhOWY4N2RlOTE0NWRhYjYyYmRhOD9rZXk9ZDc5M2MwZTQyN2JiNGM0MWRmYTBlODgxMTk0NTRiMjE=",
+        "ready": true,
+        "requiresShipping": true,
+        "note": null,
+        "paymentDue": "14.99",
+        "paymentDueV2": {
+            "amount": "14.99",
+            "currencyCode": "USD",
+            "type": {
+                "name": "MoneyV2",
+                "kind": "OBJECT",
+                "fieldBaseTypes": {
+                    "amount": "Decimal",
+                    "currencyCode": "CurrencyCode"
+                },
+                "implementsNode": false
+            }
+        },
+        "webUrl": "https://sheenmagazine.myshopify.com/61383213246/checkouts/519069c83160a9f87de9145dab62bda8?key=d793c0e427bb4c41dfa0e88119454b21",
+        "orderStatusUrl": null,
+        "taxExempt": false,
+        "taxesIncluded": false,
+        "currencyCode": "USD",
+        "totalTax": "0.00",
+        "totalTaxV2": {
+            "amount": "0.0",
+            "currencyCode": "USD",
+            "type": {
+                "name": "MoneyV2",
+                "kind": "OBJECT",
+                "fieldBaseTypes": {
+                    "amount": "Decimal",
+                    "currencyCode": "CurrencyCode"
+                },
+                "implementsNode": false
+            }
+        },
+        "lineItemsSubtotalPrice": {
+            "amount": "14.99",
+            "currencyCode": "USD",
+            "type": {
+                "name": "MoneyV2",
+                "kind": "OBJECT",
+                "fieldBaseTypes": {
+                    "amount": "Decimal",
+                    "currencyCode": "CurrencyCode"
+                },
+                "implementsNode": false
+            }
+        },
+        "subtotalPrice": "14.99",
+        "subtotalPriceV2": {
+            "amount": "14.99",
+            "currencyCode": "USD",
+            "type": {
+                "name": "MoneyV2",
+                "kind": "OBJECT",
+                "fieldBaseTypes": {
+                    "amount": "Decimal",
+                    "currencyCode": "CurrencyCode"
+                },
+                "implementsNode": false
+            }
+        },
+        "totalPrice": "14.99",
+        "totalPriceV2": {
+            "amount": "14.99",
+            "currencyCode": "USD",
+            "type": {
+                "name": "MoneyV2",
+                "kind": "OBJECT",
+                "fieldBaseTypes": {
+                    "amount": "Decimal",
+                    "currencyCode": "CurrencyCode"
+                },
+                "implementsNode": false
+            }
+        },
+        "completedAt": null,
+        "createdAt": "2022-03-26T22:04:03Z",
+        "updatedAt": "2022-03-26T22:09:08Z",
+        "email": null,
+        "discountApplications": [],
+        "appliedGiftCards": [],
+        "shippingAddress": null,
+        "shippingLine": null,
+        "customAttributes": [],
+        "order": null,
+        "lineItems": [
+            {
+                "id": "Z2lkOi8vc2hvcGlmeS9DaGVja291dExpbmVJdGVtLzQxMjgzNTE0ODU5NzEwMD9jaGVja291dD01MTkwNjljODMxNjBhOWY4N2RlOTE0NWRhYjYyYmRhOA==",
+                "title": "Sheen Cap (One Size Fits Most)",
+                "variant": {
+                    "id": "Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0VmFyaWFudC80MTI4MzUxNDg1OTcxMA==",
+                    "title": "Default Title",
+                    "price": "14.99",
+                    "priceV2": {
+                        "amount": "14.99",
+                        "currencyCode": "USD",
+                        "type": {
+                            "name": "MoneyV2",
+                            "kind": "OBJECT",
+                            "fieldBaseTypes": {
+                                "amount": "Decimal",
+                                "currencyCode": "CurrencyCode"
+                            },
+                            "implementsNode": false
+                        }
+                    },
+                    "weight": 1,
+                    "available": true,
+                    "sku": "",
+                    "compareAtPrice": null,
+                    "compareAtPriceV2": null,
+                    "image": {
+                        "id": "Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0SW1hZ2UvMzA4NzA5ODI5NTExMDI=",
+                        "src": "https://cdn.shopify.com/s/files/1/0613/8321/3246/products/sheenhat17.png?v=1647362711",
+                        "altText": null,
+                        "width": 231,
+                        "height": 218,
+                        "type": {
+                            "name": "Image",
+                            "kind": "OBJECT",
+                            "fieldBaseTypes": {
+                                "altText": "String",
+                                "height": "Int",
+                                "id": "ID",
+                                "originalSrc": "URL",
+                                "src": "URL",
+                                "width": "Int"
+                            },
+                            "implementsNode": false
+                        }
+                    },
+                    "selectedOptions": [
+                        {
+                            "name": "Title",
+                            "value": "Default Title",
+                            "type": {
+                                "name": "SelectedOption",
+                                "kind": "OBJECT",
+                                "fieldBaseTypes": {
+                                    "name": "String",
+                                    "value": "String"
+                                },
+                                "implementsNode": false
+                            }
+                        }
+                    ],
+                    "unitPrice": null,
+                    "unitPriceMeasurement": {
+                        "measuredType": null,
+                        "quantityUnit": null,
+                        "quantityValue": 0,
+                        "referenceUnit": null,
+                        "referenceValue": 0,
+                        "type": {
+                            "name": "UnitPriceMeasurement",
+                            "kind": "OBJECT",
+                            "fieldBaseTypes": {
+                                "measuredType": "UnitPriceMeasurementMeasuredType",
+                                "quantityUnit": "UnitPriceMeasurementMeasuredUnit",
+                                "quantityValue": "Float",
+                                "referenceUnit": "UnitPriceMeasurementMeasuredUnit",
+                                "referenceValue": "Int"
+                            },
+                            "implementsNode": false
+                        }
+                    },
+                    "product": {
+                        "id": "Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0LzcxODU1NjM1ODI2NTQ=",
+                        "handle": "sheen-cap-one-size-fits-most",
+                        "type": {
+                            "name": "Product",
+                            "kind": "OBJECT",
+                            "fieldBaseTypes": {
+                                "availableForSale": "Boolean",
+                                "createdAt": "DateTime",
+                                "description": "String",
+                                "descriptionHtml": "HTML",
+                                "handle": "String",
+                                "id": "ID",
+                                "images": "ImageConnection",
+                                "onlineStoreUrl": "URL",
+                                "options": "ProductOption",
+                                "productType": "String",
+                                "publishedAt": "DateTime",
+                                "title": "String",
+                                "updatedAt": "DateTime",
+                                "variants": "ProductVariantConnection",
+                                "vendor": "String"
+                            },
+                            "implementsNode": true
+                        }
+                    },
+                    "type": {
+                        "name": "ProductVariant",
+                        "kind": "OBJECT",
+                        "fieldBaseTypes": {
+                            "availableForSale": "Boolean",
+                            "compareAtPrice": "Money",
+                            "compareAtPriceV2": "MoneyV2",
+                            "id": "ID",
+                            "image": "Image",
+                            "price": "Money",
+                            "priceV2": "MoneyV2",
+                            "product": "Product",
+                            "selectedOptions": "SelectedOption",
+                            "sku": "String",
+                            "title": "String",
+                            "unitPrice": "MoneyV2",
+                            "unitPriceMeasurement": "UnitPriceMeasurement",
+                            "weight": "Float"
+                        },
+                        "implementsNode": true
+                    }
+                },
+                "quantity": 1,
+                "customAttributes": [],
+                "discountAllocations": [],
+                "type": {
+                    "name": "CheckoutLineItem",
+                    "kind": "OBJECT",
+                    "fieldBaseTypes": {
+                        "customAttributes": "Attribute",
+                        "discountAllocations": "DiscountAllocation",
+                        "id": "ID",
+                        "quantity": "Int",
+                        "title": "String",
+                        "variant": "ProductVariant"
+                    },
+                    "implementsNode": true
+                },
+                "hasNextPage": false,
+                "hasPreviousPage": false,
+                "variableValues": {
+                    "checkoutId": "Z2lkOi8vc2hvcGlmeS9DaGVja291dC81MTkwNjljODMxNjBhOWY4N2RlOTE0NWRhYjYyYmRhOD9rZXk9ZDc5M2MwZTQyN2JiNGM0MWRmYTBlODgxMTk0NTRiMjE=",
+                    "lineItems": [
+                        {
+                            "id": "Z2lkOi8vc2hvcGlmeS9DaGVja291dExpbmVJdGVtLzQxMjgzNTE0ODU5NzEwMD9jaGVja291dD01MTkwNjljODMxNjBhOWY4N2RlOTE0NWRhYjYyYmRhOA==",
+                            "quantity": 1
+                        }
+                    ]
+                }
+            }
+        ],
+        "type": {
+            "name": "Checkout",
+            "kind": "OBJECT",
+            "fieldBaseTypes": {
+                "appliedGiftCards": "AppliedGiftCard",
+                "completedAt": "DateTime",
+                "createdAt": "DateTime",
+                "currencyCode": "CurrencyCode",
+                "customAttributes": "Attribute",
+                "discountApplications": "DiscountApplicationConnection",
+                "email": "String",
+                "id": "ID",
+                "lineItems": "CheckoutLineItemConnection",
+                "lineItemsSubtotalPrice": "MoneyV2",
+                "note": "String",
+                "order": "Order",
+                "orderStatusUrl": "URL",
+                "paymentDue": "Money",
+                "paymentDueV2": "MoneyV2",
+                "ready": "Boolean",
+                "requiresShipping": "Boolean",
+                "shippingAddress": "MailingAddress",
+                "shippingLine": "ShippingRate",
+                "subtotalPrice": "Money",
+                "subtotalPriceV2": "MoneyV2",
+                "taxExempt": "Boolean",
+                "taxesIncluded": "Boolean",
+                "totalPrice": "Money",
+                "totalPriceV2": "MoneyV2",
+                "totalTax": "Money",
+                "totalTaxV2": "MoneyV2",
+                "updatedAt": "DateTime",
+                "webUrl": "URL"
+            },
+            "implementsNode": true
+        },
+        "userErrors": []
+    }
+}

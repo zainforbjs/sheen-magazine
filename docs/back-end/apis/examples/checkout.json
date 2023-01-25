@@ -1,0 +1,131 @@
+{
+    "message": "Successful creating of checkout.",
+    "checkout": {
+        "id": "Z2lkOi8vc2hvcGlmeS9DaGVja291dC8wOWYxYmY1Y2IwY2YwMGFlOWVlM2MyY2QzZjA4M2U3Mj9rZXk9MzMxMTgwMmNjMmViOTNiY2Y0ZGRkMzRlY2ZjZjYwN2Q=",
+        "ready": true,
+        "requiresShipping": false,
+        "note": null,
+        "paymentDue": "0.00",
+        "paymentDueV2": {
+            "amount": "0.0",
+            "currencyCode": "USD",
+            "type": {
+                "name": "MoneyV2",
+                "kind": "OBJECT",
+                "fieldBaseTypes": {
+                    "amount": "Decimal",
+                    "currencyCode": "CurrencyCode"
+                },
+                "implementsNode": false
+            }
+        },
+        "webUrl": "https://sheenmagazine.myshopify.com/61383213246/checkouts/09f1bf5cb0cf00ae9ee3c2cd3f083e72?key=3311802cc2eb93bcf4ddd34ecfcf607d",
+        "orderStatusUrl": null,
+        "taxExempt": false,
+        "taxesIncluded": false,
+        "currencyCode": "USD",
+        "totalTax": "0.00",
+        "totalTaxV2": {
+            "amount": "0.0",
+            "currencyCode": "USD",
+            "type": {
+                "name": "MoneyV2",
+                "kind": "OBJECT",
+                "fieldBaseTypes": {
+                    "amount": "Decimal",
+                    "currencyCode": "CurrencyCode"
+                },
+                "implementsNode": false
+            }
+        },
+        "lineItemsSubtotalPrice": {
+            "amount": "0.0",
+            "currencyCode": "USD",
+            "type": {
+                "name": "MoneyV2",
+                "kind": "OBJECT",
+                "fieldBaseTypes": {
+                    "amount": "Decimal",
+                    "currencyCode": "CurrencyCode"
+                },
+                "implementsNode": false
+            }
+        },
+        "subtotalPrice": "0.00",
+        "subtotalPriceV2": {
+            "amount": "0.0",
+            "currencyCode": "USD",
+            "type": {
+                "name": "MoneyV2",
+                "kind": "OBJECT",
+                "fieldBaseTypes": {
+                    "amount": "Decimal",
+                    "currencyCode": "CurrencyCode"
+                },
+                "implementsNode": false
+            }
+        },
+        "totalPrice": "0.00",
+        "totalPriceV2": {
+            "amount": "0.0",
+            "currencyCode": "USD",
+            "type": {
+                "name": "MoneyV2",
+                "kind": "OBJECT",
+                "fieldBaseTypes": {
+                    "amount": "Decimal",
+                    "currencyCode": "CurrencyCode"
+                },
+                "implementsNode": false
+            }
+        },
+        "completedAt": null,
+        "createdAt": "2022-03-26T13:43:18Z",
+        "updatedAt": "2022-03-26T13:43:18Z",
+        "email": null,
+        "discountApplications": [],
+        "appliedGiftCards": [],
+        "shippingAddress": null,
+        "shippingLine": null,
+        "customAttributes": [],
+        "order": null,
+        "lineItems": [],
+        "type": {
+            "name": "Checkout",
+            "kind": "OBJECT",
+            "fieldBaseTypes": {
+                "appliedGiftCards": "AppliedGiftCard",
+                "completedAt": "DateTime",
+                "createdAt": "DateTime",
+                "currencyCode": "CurrencyCode",
+                "customAttributes": "Attribute",
+                "discountApplications": "DiscountApplicationConnection",
+                "email": "String",
+                "id": "ID",
+                "lineItems": "CheckoutLineItemConnection",
+                "lineItemsSubtotalPrice": "MoneyV2",
+                "note": "String",
+                "order": "Order",
+                "orderStatusUrl": "URL",
+                "paymentDue": "Money",
+                "paymentDueV2": "MoneyV2",
+                "ready": "Boolean",
+                "requiresShipping": "Boolean",
+                "shippingAddress": "MailingAddress",
+                "shippingLine": "ShippingRate",
+                "subtotalPrice": "Money",
+                "subtotalPriceV2": "MoneyV2",
+                "taxExempt": "Boolean",
+                "taxesIncluded": "Boolean",
+                "totalPrice": "Money",
+                "totalPriceV2": "MoneyV2",
+                "totalTax": "Money",
+                "totalTaxV2": "MoneyV2",
+                "updatedAt": "DateTime",
+                "webUrl": "URL"
+            },
+            "implementsNode": true
+        },
+        "userErrors": []
+    }
+}

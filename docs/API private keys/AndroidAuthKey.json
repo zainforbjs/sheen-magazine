@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "pc-api-5596274503478562585-342",
+  "private_key_id": "37618cc2105f00ea63fad30e06066f69f8f31acd",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQCDbkbRYpVVie3K\nrEGNHEtzGUUbblzgrWO6DgGTEewcX+KaBIm1mGW5ujCZ10rb4dl4a2IYvuL70XP0\nvZRLlvG2Xhwxs2HH7Iq5G0hlsddL5Pv+6eGSpo7YRui3Xxi+m/hLAjVzral9XUu1\n+OwNcI9b7P+aI3g8BwCQ9e5aJt4PbOmsmdbGD0aYe3nYWgG+gOnbDaaa+FV73KVX\nANSDF3QCQ4oVLik3rWmk2gKOBOSwhEb/AGh06ZqLREB3kk/1P0HzIKmhoPaGVRoq\n4zr27tanuYl+m/XujyjubWyZ5QV1uLSJpF2aADB0GTzL3HR9iM5iFhrmDAhCAiAH\nvlJbqAJ9AgMBAAECggEAMOs1zq9719e7u0j8KRKT/qY0M66TQUkoKlMWQPBVyoXh\n6OOxgfbUPhnQByK8CTV55TlKzN0XzRS7rSd279+h3fgPVGxpA6nGRHmkK73S3bvA\nE7RnslbuKg/ShJYPtrqE4x5SWNkVkcTM7lFVQvdXVKbUyEFVejo8+ree3M1Er8aY\ncHH9coKCQrbWyeszj999Pd+XqVSrWlKLo5OGFjjQrcUr156k8vbB5y+fKJkpavqH\nNyEtCsZ5MLjp8osO1vkbVWtN0mRBPxoF4hKcIthIFA2amaSemgz/BOJ2dQcXJ2np\n1snyiRbh7nRtYZSkkOPz6sGSmpbWOE9g0Z41BkeCXQKBgQC5oLtuDVpA5RPurcWO\n5Q7EOxRyIabkKigQ7NTSYb8bPqyUH2HxGgG1L5P3PHplAnnBveOHfU0l4r0ThREg\nAUOMSonJqZWaacFmBJ65avWU0bQtWUaskRn87ET3Ai7WAJxoFKXsp5rmGE1NI4TS\nHrljWr4W5aM83SVSlACQMxLNowKBgQC1QbEy000rAez1ezjdp4LScG8GTtpHARB2\nVdd8k29tBftA18RXlV3+AaAw6JxJi869cnnvOu4TAIP1Bq+k0q8KsUhpwi8mowXw\nnp3wztpMW9qpAdu+Wq5IsSdtYWqOztyKPjv1WVscOvcPopyliMCnZd2O8NSWuA8i\nYv3CcoCxXwKBgQC4voBr2jwuBA+fZzEMs2nL4OTLZjScNlyj46E4NPInImxOCyHF\n/FUgx1ZjJLzHlPwq11sAuLM0doIpUDEoAjoBARo7K11qTcCeURDLhukdkMvaqlSN\nYOhVcax9jZ2hfQAtEgfFDVY7lIoysJv7J3roqCIx1aBt7ca8dfJNkZcwMwKBgAju\nNKnZaVruHFu394RMRZDSw1WfOvf2oHYEIrrblMjdW5TFTMI39MqYD+l4/IJPJh+F\nbWaRE7vR8a535t2LF97B/1xeme4gaCGD3ypHNtA+UlazZb1KQH4KZHPqMdLZdFpH\nWLLs9SU97oBRtcAeLcfRqAnr6b2HUg+SqwgSli6nAoGAd+qowT5Cf4q5e71oaf5r\n3QAVA+JHcnHbDnQR/ThAUKRkoASMlIPqDH5rP2RMRucdEoZXLWCSMRzQKqWzhaNP\nMydP4+sn/tGaeo0pbL7OzGbrUqU/29I41Ilimey1E20xLGl3RSvJCLemLzl4JY1C\n2Rlt+jUoY8khqIZxbGahQwo=\n-----END PRIVATE KEY-----\n",
+  "client_email": "sheen-magazine@pc-api-5596274503478562585-342.iam.gserviceaccount.com",
+  "client_id": "103724446439777207684",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/sheen-magazine%40pc-api-5596274503478562585-342.iam.gserviceaccount.com"
+}
