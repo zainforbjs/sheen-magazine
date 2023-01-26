@@ -106,7 +106,7 @@ export const GetVideos = async (
 };
 
 export const LoadVideoById = async (id: number) => {
-  await UpdateVideoViewById(id);
+  UpdateVideoViewById(id);
   return GetVideoById(id);
 };
 

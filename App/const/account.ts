@@ -6,6 +6,7 @@ export const SIGNOUT_COMPLETE: string = 'SIGNOUT_COMPLETE';
 
 export const SIGNUP = 'SIGNUP';
 export const SIGNUP_SUCCESS: string = 'SIGNUP_SUCCESS';
+export const SIGNIN_ERROR: string = 'SIGNIN_ERROR';
 export const GET_USER: string = 'GET_USER';
 
 export const ADD_TO_CART: string = 'ADD_TO_CART';

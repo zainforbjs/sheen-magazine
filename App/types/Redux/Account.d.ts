@@ -16,6 +16,7 @@ export type ReduxStateAccount =
 {
   user?: ItemUser;
   registerUser?: ItemUser;
+  error?: string;
 
 };
 export type ReduxStateAccountProps = ReduxStateAccount & ReduxStateLoading;

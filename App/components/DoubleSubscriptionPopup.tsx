@@ -22,7 +22,7 @@ import RNIap from 'react-native-iap';
 import Loading from './Loading';
 import RadioButtonContainer from './RedioButton/RadioButtonContainer';
 
-import { adapty, AdaptyPaywall } from 'react-native-adapty';
+import { adapty, AdaptyPaywall, FetchPolicy } from 'react-native-adapty';
 
 type Props = {
   isVisible: boolean;
@@ -44,30 +44,29 @@ type Mystate = {
   loading: boolean;
   currentSelectedItem: number | null;
   paywall: AdaptyPaywall | undefined;
+  products: Object;
   paid: boolean;
   paidProduct: any;
 };
 export default class extends React.Component<Props> {
   state: Mystate = {
     loading: false,
-    currentSelectedItem: null,
+    currentSelectedItem: 0,
     paywall: undefined,
+    products:[],
     paid: false
   };
   async componentDidMount() {
     try {
       // const { paywalls } = await adapty.paywalls.getPaywalls();
-      const paywall = await adapty.getPaywall("VideoSubsID");
-    //   const products = await adapty.getPaywallProducts(paywall, {
-    //     ios: { fetchPolicy: 'wait_for_receipt_validation' },
-    // });
-
-
+      const paywall = await adapty.getPaywall("testWall");
+      const products = await adapty.getPaywallProducts(paywall);      
       // const bestPaywall = paywalls.find(
       //   (paywall: any) => paywall.developerId === 'testwall'
       // );
       this.setState({
-        paywall: undefined
+        paywall: undefined,
+        products: products,
       });
 
       // let y = await RNIap.initConnection();
@@ -125,7 +124,6 @@ export default class extends React.Component<Props> {
     //     .then(x => console.log(x))
     //     .catch(err => console.log(err));
     // });
-    alert(productToBuy)
     try {
       const profile =
         await adapty.makePurchase(productToBuy);
@@ -212,14 +210,12 @@ export default class extends React.Component<Props> {
               </View>
             )}
             {!this.state.paid && (
-              <View style={[t.pL4, t.pR4, t.mY3]}>
-                <Text style={[t.flex, t.textCenter, txtColor(black), t.textLg]}>
+              <View style={[t.pL4, t.pR4, t.mY3]}
+              >
+                <Text style={[t.flex, t.textCenter, txtColor(black), t.textLg]}
+                >
                   <RadioButtonContainer
-                    values={
-                      homeSubscribe
-                        ? this.state.paywall?.products[0]
-                        : this.state.paywall?.products
-                    }
+                    values={this.state?.products}
                     currentSelectedItem={this.state.currentSelectedItem}
                     onPress={this.onRadioButtonPress}
                   />
@@ -239,10 +235,10 @@ export default class extends React.Component<Props> {
                   <ButtonEclipse
                     text="Activate Subscription"
                     onPress={(): void => {
-                      const { paywall, currentSelectedItem } = this.state;
+                      const { paywall, currentSelectedItem, products } = this.state;
                       const selectedProduct =
-                        paywall?.products?.[currentSelectedItem];
-                      this.requestProduct("Monthly-Video");
+                        products?.[currentSelectedItem];
+                      this.requestProduct(selectedProduct);
                     }}
                   />
                 </View>

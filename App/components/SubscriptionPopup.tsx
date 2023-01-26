@@ -21,7 +21,7 @@ import RNIap from 'react-native-iap';
 import Loading from './Loading';
 import RadioButtonContainer from './RedioButton/RadioButtonContainer';
 
-import { adapty, AdaptyPaywall } from 'react-native-adapty';
+import { adapty, AdaptyPaywall, FetchPolicy } from 'react-native-adapty';
 
 type Props = {
   isVisible: boolean;
@@ -43,6 +43,7 @@ type Mystate = {
   loading: boolean;
   currentSelectedItem: number;
   paywall: AdaptyPaywall | undefined;
+  products: Object;
   paid: boolean;
 };
 export default class extends React.Component<Props> {
@@ -50,23 +51,19 @@ export default class extends React.Component<Props> {
     loading: false,
     currentSelectedItem: 0,
     paywall: undefined,
+    products:[],
     paid: false
   };
   async componentDidMount() {
     try {
-      const { paywalls } = await adapty.paywalls.getPaywalls({
-        forceUpdate: true
-      });
-      // console.log('Debug :::> File: Video.tsx, Line : 56,  :::>', paywalls);
-      const bestPaywall = paywalls.find(
-        paywall => paywall.developerId === 'videoTest'
-      );
+      const paywall = await adapty.getPaywall("VideoSubsID");
+      const products = await adapty.getPaywallProducts(paywall);   
       // console.log(
       //   'Debug :::> File: index.tsx, Line : 18, bestPaywall :::>',
       //   JSON.stringify(bestPaywall)
       // );
       this.setState({
-        paywall: bestPaywall
+        products: products
       });
 
       // let y = await RNIap.initConnection();
@@ -134,13 +131,11 @@ export default class extends React.Component<Props> {
         'Debug :::> File: DoubleSubscriptionPopup.tsx, Line : 116, productToBuy :::>',
         productToBuy
       );
-      const { receipt, purchaserInfo, product } =
-        await adapty.purchases.makePurchase(productToBuy);
+      const profile =
+        await adapty.makePurchase(productToBuy);
       console.log(
         'Debug :::> File: index.tsx, Line : 23, receipt, purchaserInfo, product :::>',
-        receipt,
-        purchaserInfo,
-        product
+        profile
       );
       this.setState({ paid: true });
       this.props.ActionSubscribe();
@@ -222,11 +217,7 @@ export default class extends React.Component<Props> {
               <View style={[t.pL4, t.pR4, t.mY3]}>
                 <Text style={[t.flex, t.textCenter, txtColor(black), t.textLg]}>
                   <RadioButtonContainer
-                    values={
-                      homeSubscribe
-                        ? this.state.paywall?.products[0]
-                        : this.state.paywall?.products
-                    }
+                    values={this.state.products}
                     currentSelectedItem={this.state.currentSelectedItem}
                     onPress={this.onRadioButtonPress}
                   />
@@ -246,9 +237,9 @@ export default class extends React.Component<Props> {
                   <ButtonEclipse
                     text="Activate Subscription"
                     onPress={(): void => {
-                      const { paywall, currentSelectedItem } = this.state;
+                      const { products, currentSelectedItem } = this.state;
                       const selectedProduct =
-                        paywall?.products[currentSelectedItem];
+                        products[currentSelectedItem];
                       this.requestProduct(selectedProduct);
                     }}
                   />

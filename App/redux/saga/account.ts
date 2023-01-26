@@ -13,6 +13,7 @@ import {
   SelectEffect
 } from 'redux-saga/effects';
 import {
+  ActionSignInError,
   ActionSignInSuccess,
   ActionSignOutComplete,
   ActionSignUpSuccess
@@ -75,6 +76,7 @@ function* WatchSignIn({
   never
 > {
   try {
+    yield put(ActionSignInError(""));
     yield put(ActionShowLoading());
     yield delay<true>(1500);
     let response: ServerResponseAuthSuccess = yield call<
@@ -119,8 +121,10 @@ function* WatchSignIn({
           ? exception.message
           : 'Sign in failed. Please try again!';
     }
+    yield put(ActionSignInError(errorContent));
 
-    Alert.alert(errorMessage, errorContent);
+
+    //Alert.alert(errorMessage, errorContent);
   } finally {
     yield put(ActionHideLoading());
   }

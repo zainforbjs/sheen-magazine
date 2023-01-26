@@ -17,7 +17,7 @@ export default function RadioButton({
 
   return (
     <TouchableOpacity
-      style={[t.flex1, styles.mainContainer, isChecked && styles.selectedMain]}
+      style={[styles.mainContainer, isChecked && styles.selectedMain]}
       onPress={onRadioButtonPress}
     >
       <View
@@ -72,6 +72,7 @@ const styles = StyleSheet.create({
     borderColor: '#ED2124'
   },
   mainContainer: {
+    width:"100%",
     height: 60,
     marginTop: 5,
     marginBottom: 5,
@@ -110,7 +111,7 @@ const styles = StyleSheet.create({
     // borderColor: 'white'
   },
   radioButtonTextContainer: {
-    flex: 5,
+    //flex: 1,
     height: 50,
     justifyContent: 'center',
     paddingLeft: 10

@@ -48,7 +48,8 @@ export default class WatchVideo extends React.Component<Props, State> {
       )
     });
 
-    LoadVideoById(id).then(video => this.setState({ video }));
+    LoadVideoById(id).then(video => {
+      this.setState({ video })});
   }
 
   componentDidMount() {

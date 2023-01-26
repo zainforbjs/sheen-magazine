@@ -27,6 +27,7 @@ import { flowRight } from 'lodash';
 type Props = NavigationPropsTypeApp<'MainApp'>;
 
 const Home: React.FC<Props> = (props: Props) => {
+  const error =  useSelector((state) => state.account.error);
   const dispatch: Dispatch<ReduxActionAuthSignIn> =
     useDispatch<Dispatch<ReduxActionAuthSignIn>>();
   const {
@@ -101,6 +102,10 @@ const Home: React.FC<Props> = (props: Props) => {
             errors={errors}
             secureTextEntry
           />
+          {!!error &&
+          <Text style={[t.textRed600, t.mT2, t.mL2]}>{error}</Text>
+          }
+          
           <View style={{ flex: 1 }}>
             <Text
               onPress={() =>

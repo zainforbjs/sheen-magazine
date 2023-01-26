@@ -206,7 +206,7 @@ const DrawerContentAccount: React.FC<Props> = (props: Props) => {
                     {
                       text: 'Yes',
                       onPress: () => {
-                        AsyncStorage.removeItem('downloadedPDF');
+                        //AsyncStorage.removeItem('downloadedPDF');
                         dispatch(ActionSignOut())
                       }
                     },
